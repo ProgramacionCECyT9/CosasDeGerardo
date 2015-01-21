@@ -9,15 +9,6 @@ body
 	font-family: 'pen Sans', sans-serif;
 	font-size: 16px;
 }
-footer
-{
-	background: #344B54;
-	border-top: 3px solid #7AB59C;
-	color: rgba(255,255,255,0.7);
-	padding: 1em;
-	text-align: center;
-
-}
 header
 {
 	background: #2E5462;
@@ -71,9 +62,21 @@ form input{
 	border: 0px;
 	text-align: center;
 }
+form input:hover{
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	-ms-transition:.2s;
+	-o-transition:.2s;
+	background: rgba(77, 76, 76, 0.7);
+	border: 0px;
+	color: #BABABA;
+}
+form p{
+	color:#BABABA;
+}
 footer
 {
-	background: #2E5462;
+	background: #344B54;
 	border-top: 3px solid #2E5463;
 	color: rgba(255,255,255,0.7);
 	padding: 1em;
@@ -96,10 +99,18 @@ footer p:last-child:before
 {
 	content: "- ";
 }
+}
+footer:hover{
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	-ms-transition:.2s;
+	-o-transition:.2s;
+	background: #344B54;
+}
 #contenido
 {
 	margin: 1.5em;
-	margin-bottom: 10em;
+	margin-bottom: 15em;
 	text-align: center;
 	background: rgba(77, 76, 76, 0.7);
 	border-radius: 5px;
