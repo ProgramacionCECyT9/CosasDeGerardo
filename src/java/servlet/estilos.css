@@ -71,6 +71,15 @@ form input:hover{
 	border: 0px;
 	color: #BABABA;
 }
+form input:focus{
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	-ms-transition:.2s;
+	-o-transition:.2s;
+	background: rgba(77, 76, 76, 0.7);
+	border: 0px;
+	color: #BABABA;
+}
 form p{
 	color:#BABABA;
 }
