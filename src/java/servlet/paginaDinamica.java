@@ -37,10 +37,45 @@ public class paginaDinamica extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             //out.println("<!DOCTYPE html>");
             String pagina = request.getParameter("pagina");
-            
+
             if(pagina.equals("1"))
             {
-                out.println("procesamos y pintamos pagina 1");
+                out.print("
+                    <!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                      <meta charset="utf-8"/>
+                      <meta name="description" content="Pagina en servlet"/>
+                      <meta name="viewport" content="width=device-width, minimum-scale=1 maximum-scale=1"/>
+                      <title>Servlet Response</title>
+                      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+                      <link rel="stylesheet" type="text/css" href="normalize.css">
+                      <link rel="stylesheet" type="text/css" href="estilos.css">
+                    </head>
+                    <body>
+                      <header>
+                      <h1><a href="#">Hola bienvenido al registro</a></h1>
+                    </header>
+                      <div id="contenido">
+                      <form action="paginaDinamica\" method="post" id="form">
+                        <input type="text" placeholder="Nombre"/><br /><br />
+                        <input type="text" placeholder="Apellido Paterno"/><br /><br />
+                        <input type="text" placeholder="Apellido Materno"/><br /><br />
+                        <input type="email" placeholder="Correo"/><br /><br />
+                        <input type="submit"/>
+                      </form>
+                      </div>
+                    <footer>
+                      <p>
+                        <strong>Powered by Me</strong>
+                      </p>
+                      <p>
+                          Hasta footer tiene :3
+                      </p>
+                    </footer>
+                      </body>
+                    </html>
+                ");
             }
             else
             {
@@ -53,8 +88,8 @@ public class paginaDinamica extends HttpServlet {
                     out.println("pintamos formulario");
                 }
             }
-            
-            
+
+
         }
     }
 
